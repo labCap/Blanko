@@ -1,0 +1,63 @@
+@import "rem";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+// ===================================================================================
+
+$roboto: "Roboto", sans-serif;
+
+$regular: 400;
+$bold: 700;
+
+$orange-light: #fcab90;
+$orange: #ff7143;
+$orange-dark: #b65130;
+
+$transition: all 0.2s linear;
+
+@mixin font($fw, $fz, $lh, $c, $mb: 0px) {
+  font-family: $roboto;
+  font-weight: $fw;
+  font-size: $fz;
+  line-height: $lh;
+  color: $c;
+  margin-bottom: $mb;
+}
+
+// ===================================================================================
+body {
+  font-family: $roboto;
+}
+
+a {
+  display: inline-block;
+  color: #000;
+}
+
+// ===================================================================================
+
+.container {
+  max-width: 1310px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.btn {
+  padding: 12px 32px;
+  background: $orange;
+  border-radius: 6px;
+
+  @include font($bold, 16px, 24px, #000);
+
+  transition: $transition;
+
+  &:hover {
+    background: $orange-dark;
+  }
+  &:active {
+    background: $orange-light;
+  }
+}
+
+// ===================================================================================
+
+@import "header.scss";

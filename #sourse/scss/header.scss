@@ -1,0 +1,81 @@
+.header {
+  background: #000;
+  width: 100%;
+  position: fixed;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+  }
+
+  &__box {
+    height: 100%;
+    width: 100%;
+    padding: 0 32px;
+    margin: 0 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-right: 1px solid rgba(255, 255, 255, 0.16);
+    border-left: 1px solid rgba(255, 255, 255, 0.16);
+  }
+
+  &__email {
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 4px;
+    padding: 4px 8px;
+
+    @include font($regular, 16px, 24px, #fff);
+
+    transition: $transition;
+    &:hover {
+      color: #999;
+    }
+    &:active {
+      color: #555;
+    }
+  }
+}
+
+.logo {
+  width: 112px;
+  height: auto;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  &__link {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+
+    @include font($regular, 16px, 24px, #fff);
+
+    transition: $transition;
+    &:hover {
+      color: #999;
+    }
+    &:active {
+      color: #555;
+    }
+
+    i {
+      margin: 0 0 0 6px;
+      font-size: 10px;
+    }
+  }
+}
+
+.sign {
+  display: flex;
+  white-space: nowrap;
+  &__btn {
+  }
+}
+
+.sign-up {
+  margin-right: 26px;
+}
