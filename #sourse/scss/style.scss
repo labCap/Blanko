@@ -58,6 +58,11 @@ a {
   }
 }
 
+.descr {
+  @include font($bold, 18px, 27px, #000, 22px);
+}
+
 // ===================================================================================
 
-@import "header.scss";
+@import "header";
+@import "intro";

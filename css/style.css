@@ -122,6 +122,15 @@ a {
   background: #fcab90;
 }
 
+.descr {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  color: #000;
+  margin-bottom: 22px;
+}
+
 .header {
   background: #000;
   width: 100%;
@@ -225,4 +234,100 @@ a {
 }
 .sign-up {
   margin-right: 26px;
+}
+
+.intro {
+  background: #ff7143;
+  padding: 80px 0 0 0;
+}
+.intro__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.intro__text-box {
+  max-width: 587px;
+  text-align: center;
+  padding: 100px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.intro__title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 72px;
+  color: #000;
+  margin-bottom: 27px;
+}
+.intro__btn {
+  margin: 4px;
+  padding: 20px 32px;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.intro__btn:nth-child(1) {
+  background: #000;
+  color: #fff;
+}
+.intro__btn:nth-child(2) {
+  background: #fff;
+  color: #000;
+}
+.intro__btn:hover {
+  background: #999;
+}
+.intro__btn:active {
+  background: #555;
+}
+.intro__quote {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000;
+  margin-bottom: 16px;
+}
+.intro__info {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000;
+  margin-bottom: 0px;
+}
+.intro__reviews {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 0px;
+}
+.stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 -5px 23px;
+}
+
+.star {
+  margin: 0 5px;
 }
